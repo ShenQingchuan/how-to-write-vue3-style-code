@@ -17,7 +17,7 @@ describe('Test: Vue Router', () => {
       {
         path: '/counter',
         name: 'counter',
-        component: () => import('@/views/RouterOne.vue'),
+        component: RouterOne,
       },
     ],
   });
@@ -36,6 +36,7 @@ describe('Test: Vue Router', () => {
 
   it('2. After clicked the link, check <router-view> text', () => {
     router.push('/counter');
+    console.log(wrapper.text());
     expect(wrapper.find(RouterOne).exists()).toBe(true);
   });
 })

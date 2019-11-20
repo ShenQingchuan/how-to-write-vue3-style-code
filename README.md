@@ -131,6 +131,9 @@ I guess this might be a problem caused by the `vue` and `@vue/composition-api` t
 
 If you got any idea, please send me an issue.
 
+And due to my unit test file `tests/unit/Router.spec.ts` is also using `Vue-Router`,
+in order to avoid the TypeCheck Error Report, I fixed this with my **Solution Below**.
+
 **Solution:**
 
 If you really need to import a router view component like this, then you **MUST** provide

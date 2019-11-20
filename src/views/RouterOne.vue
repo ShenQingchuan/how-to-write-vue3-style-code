@@ -10,6 +10,7 @@ import Counter from '@/components/Counter.vue';
 
 export default createComponent({
   name: 'router-one',
+  props: {},
   components: {
     Counter,
   },
