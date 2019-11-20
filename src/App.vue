@@ -11,6 +11,7 @@ import { createComponent } from '@vue/composition-api';
 
 export default createComponent({
   name: 'App',
+  props: {},
 });
 </script>
 

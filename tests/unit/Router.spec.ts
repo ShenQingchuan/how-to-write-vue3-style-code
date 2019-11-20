@@ -17,7 +17,7 @@ describe('Test: Vue Router', () => {
       {
         path: '/counter',
         name: 'counter',
-        component: RouterOne,
+        component: () => import('@/views/RouterOne.vue'),
       },
     ],
   });
