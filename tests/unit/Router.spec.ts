@@ -2,7 +2,7 @@ import { createLocalVue, mount, RouterLinkStub } from '@vue/test-utils';
 import VueCompositionApi from '@vue/composition-api';
 
 import VueRouter from 'vue-router';
-import App from '@/App.vue'
+import App from '@/App.vue';
 import RouterOne from '@/views/RouterOne.vue';
 
 describe('Test: Vue Router', () => {
@@ -26,8 +26,8 @@ describe('Test: Vue Router', () => {
     localVue,
     router,
     stubs: {
-      RouterLink: RouterLinkStub
-    }
+      RouterLink: RouterLinkStub,
+    },
   });
 
   it('1. Has a <router-link> to /counter', () => {
@@ -39,4 +39,4 @@ describe('Test: Vue Router', () => {
     console.log(wrapper.text());
     expect(wrapper.find(RouterOne).exists()).toBe(true);
   });
-})
+});

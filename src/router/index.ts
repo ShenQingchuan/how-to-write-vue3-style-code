@@ -13,6 +13,11 @@ const routes = [
     component: () => import('../views/RouterOne.vue'),
     // component: RouterOne,
   },
+  {
+    path: '/name',
+    name: 'name',
+    component: () => import('../views/RouterTwo.vue'),
+  },
 ];
 
 const router = new VueRouter({
